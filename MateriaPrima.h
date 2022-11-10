@@ -7,9 +7,11 @@ using namespace std;
 class MateriaPrima {
 public:
 	MateriaPrima(int,string);
+	MateriaPrima(ifstream&);
 	~MateriaPrima();
 	int getCantidad();
 	string getNombre();
+	bool guardar(ofstream&);
 	string toString();
 	
 private:

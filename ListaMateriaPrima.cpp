@@ -39,3 +39,18 @@ MateriaPrima* ListaMateriaPrima::recuperarMateriaPrima(string nombreMateriaPrima
 	}
 	return nullptr;
 }
+
+
+
+int ListaMateriaPrima::getN ( ) {
+	return n;
+}
+
+void ListaMateriaPrima::iniciarActual ( ) {
+	actual = primero;
+}
+
+bool ListaMateriaPrima::masElementos ( ) {
+	return actual != nullptr;
+}
+

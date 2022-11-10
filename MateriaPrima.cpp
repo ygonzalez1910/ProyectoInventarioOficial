@@ -25,3 +25,21 @@ int MateriaPrima::getCantidad ( ) {
 	return cantidad;
 }
 
+MateriaPrima::MateriaPrima (ifstream& entrada) {
+	entrada >> nombre;
+	entrada >> cantidad;
+}
+
+bool MateriaPrima::guardar (ofstream& salida) {
+	salida << nombre <<endl;
+	salida << cantidad << endl;
+	
+	//Limpiar el buffer del stream
+	salida.flush();
+	
+	if(salida.good()){
+		return true;
+	}
+	return false;
+}
+

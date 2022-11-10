@@ -9,10 +9,14 @@ public:
 	~ListaMateriaPrima();
 	void agregarMateriaPrima(MateriaPrima*);
 	string toString();
+	int getN();
+	void iniciarActual();
+	bool masElementos();
 	MateriaPrima* recuperarMateriaPrima(string);
 private:
 	NodoMateriaPrima* primero;
 	NodoMateriaPrima* actual;
+	int n;
 };
 
 #endif
