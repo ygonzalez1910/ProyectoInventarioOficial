@@ -27,12 +27,12 @@ string ListaRutas::toString(){
 	return r.str();
 }
 
-Rutas* ListaRutas::recuperarRutas(int numeroRutas){
+Rutas* ListaRutas::recuperarRutas(string nombreRutas){
 	Rutas* Rutas;
 	actual = primero;
 	while(actual != nullptr){
 		Rutas = actual->getDato();
-		if(Rutas != nullptr && Rutas->getNumero()== numeroRutas){
+		if(Rutas != nullptr && Rutas->getNombre()== nombreRutas){
 			return Rutas;
 		}
 		actual = actual->getSiguiente();

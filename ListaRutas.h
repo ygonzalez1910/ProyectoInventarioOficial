@@ -9,7 +9,7 @@ public:
 	~ListaRutas();
 	void agregarRutas(Rutas*);
 	string toString();
-	Rutas* recuperarRutas(int);
+	Rutas* recuperarRutas(string);
 private:
 	NodoRutas* primero;
 	NodoRutas* actual;

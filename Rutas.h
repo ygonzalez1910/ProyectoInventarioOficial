@@ -6,13 +6,13 @@ using std::string;
 
 class Rutas {
 public:
-	Rutas(int);
+	Rutas(string);
 	~Rutas();
-	int getNumero();
+	string getNombre();
 	string toString();
 	
 private:
-	int numero;
+	string nombre;
 };
 
 #endif

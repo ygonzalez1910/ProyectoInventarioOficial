@@ -2,7 +2,7 @@
 #include <sstream>
 using std::stringstream;
 
-Comercio::Comercio(string nombre): nombre(nombre) {
+Comercio::Comercio(){
 	
 }
 
@@ -10,12 +10,35 @@ Comercio::~Comercio() {
 	
 }
 
-string Comercio::toString(){
-	stringstream r;
-	r <<"Comercio: " <<  nombre <<"\n";
-	return r.str();
+void Comercio::agregarChofer (Chofer * chofer) {
+	choferes->agregarChofer(chofer);
 }
 
-string Comercio::getNombre ( ) {
-	return nombre;
+string Comercio::listadoChoferes ( ) {
+	return choferes->toString();
 }
+
+void Comercio::agregarProveedor (Proveedor * proveedor) {
+	provedores->agregarProveedor(proveedor);
+}
+
+string Comercio::listadoProveedores ( ) {
+	provedores->toString();
+}
+
+void Comercio::agregarRutas (Rutas* rutas) {
+	rutas-agregarRutas();
+}
+
+string Comercio::listadoRutas(){
+	rutas->toString();
+}
+
+void Comercio::agregarMateriaPrima(MateriaPrima* materiaPrima) {
+	materiasPrimas->agregarMateriaPrima(materiaPrima191);
+}
+
+string Comercio::listadoMateriaPrima ( ) {
+	
+}
+
