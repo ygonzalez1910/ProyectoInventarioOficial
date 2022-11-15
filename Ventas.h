@@ -1,13 +1,12 @@
 #ifndef VENTAS_H
 #define VENTAS_H
-#include <ListaMateriaPrima.h>
+#include "ListaMateriaPrima.h"
 #include <string>
 using std::string;
 
 class Ventas {
 public:
 	Ventas(string);
-	Ventas(ifstream&);
 	~Ventas();
 	bool guardar(ofstream&);
 	void agregarMateriaPrima(MateriaPrima*);

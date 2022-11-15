@@ -1,6 +1,5 @@
 #ifndef LISTAMATERIAPRIMA_H
 #define LISTAMATERIAPRIMA_H
-
 #include "NodoMateriaPrima.h"
 
 class ListaMateriaPrima {
